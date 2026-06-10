@@ -1,0 +1,64 @@
+
+body{
+margin:0;
+font-family:Segoe UI,Arial,sans-serif;
+background:#030712;
+color:white;
+overflow-x:hidden;
+}
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.15),transparent 30%),
+radial-gradient(circle at 80% 80%,rgba(0,150,255,.15),transparent 30%);
+animation: pulse 6s infinite;
+}
+@keyframes pulse{
+50%{transform:scale(1.05)}
+}
+.wrap{
+max-width:1000px;
+margin:auto;
+padding:30px;
+position:relative;
+z-index:1;
+}
+h1{
+text-align:center;
+color:#00f7ff;
+text-shadow:0 0 25px #00f7ff;
+}
+.glass,.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(0,247,255,.4);
+border-radius:18px;
+padding:20px;
+box-shadow:0 0 30px rgba(0,247,255,.15);
+}
+input,textarea{
+width:100%;
+margin:10px 0;
+padding:14px;
+border-radius:12px;
+border:1px solid #00f7ff;
+background:#08111f;
+color:white;
+box-sizing:border-box;
+}
+textarea{height:120px}
+button{
+padding:12px 18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-weight:bold;
+background:#00f7ff;
+}
+.card{margin-top:20px}
+.stats{
+text-align:center;
+font-size:20px;
+margin-bottom:20px;
+}
